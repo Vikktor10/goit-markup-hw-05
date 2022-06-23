@@ -11,6 +11,7 @@
    --background-team-color: #F5F4FA;
    --button-hover: #188CE8;
    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 html {
@@ -126,6 +127,7 @@ a {
     line-height: 1.15;
     letter-spacing: 0.02em;
     transition: color var(--transition)
+
  }
 
 
@@ -260,6 +262,7 @@ a {
    background-color: rgba(0, 0, 0, 0.2);
    transition: opacity var(--transition), visibility var(--transition);
 
+
 }
  
 .modal {
@@ -306,29 +309,6 @@ a {
 }
 
 
-/* .modal .icon {
-   fill: var(--title-color);
-   display: inline-block;
-}
-
-.modal .close-btn .icon {
-   transition: var(--transition);
-}
-
-.modal .close-btn:hover .icon {
-   fill: var(--accent-color);
-}
-
-.modal-text {
-   margin-right: 30px;
-}
-
-.close-all {
-   position: absolute;
-   height: 1px;
-   overflow: hidden;
-   width: 1px;
-} */
 
  /* Чему уделяем внимание */
 
@@ -431,8 +411,6 @@ a {
 }
 
 
-  
-
 
  /* Our team */
 
@@ -511,6 +489,8 @@ a {
    align-items: center;
    justify-content:center;
    transition: var(--transition);
+   transition-property: background-color var(--accent-color)
+   
  }
 
  .team-soc-link:hover,
@@ -658,9 +638,10 @@ a {
    display: flex;
    align-items: center;
    justify-content: center;
-   background: rgba(255, 255, 255, 0.1);
+   background-color: rgba(255, 255, 255, 0.1);
    fill: #FFFFFF;
    transition: var(--transition);
+   transition-property:var(--accent-color);
  }
  .footer-soc-link:hover,
  .footer-soc-link:focus {
@@ -723,12 +704,14 @@ a {
    margin-bottom: 30px;
    width: 370px;
    cursor: pointer;
-   transition: var(--transition);
+   
  }
 
  .portfolio-link {
    display: flex;
    flex-direction: column;
+   transition: var(--transition);
+   transition-property: box-shadow var(--transition), var(--accent-color);
  }
 
  .portfolio-item:nth-child(3n) {
