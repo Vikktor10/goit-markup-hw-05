@@ -430,11 +430,10 @@ a {
    color: var(--main-white);
 }
 
-.projects-title {
-   position: absolute;
+
   
 
-}
+
  /* Our team */
 
  .section-team {
@@ -512,12 +511,12 @@ a {
    align-items: center;
    justify-content:center;
    transition: var(--transition);
-   
  }
 
  .team-soc-link:hover,
  .team-soc-link:focus {
    background-color: var(--accent-color);
+   
  }
 
  .team-soc-link:hover .team-soc-icon {
@@ -530,6 +529,7 @@ a {
 
  .team-soc-icon {
    fill: #AFB1B8;
+   transition: var(--transition);
  }
 
  /* Постоянные клиенты */
@@ -576,13 +576,17 @@ a {
 }
 
 .clients-icon {
+   transition: var(--transition);
    fill: #AFB1B8;
+   
+
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
    fill: var(--accent-color);
 }
+
 
 .clients-link:hover,
 .clients-link:focus {
@@ -719,6 +723,7 @@ a {
    margin-bottom: 30px;
    width: 370px;
    cursor: pointer;
+   transition: var(--transition);
  }
 
  .portfolio-link {
